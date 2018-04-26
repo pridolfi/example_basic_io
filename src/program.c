@@ -22,9 +22,9 @@ void loop(void)
             digitalWrite(outs[i], HIGH);
         } else {
             digitalWrite(outs[i], HIGH);
-    	    delay(100);
+    	    delay(1000);
     	    digitalWrite(outs[i], LOW);
-    	    delay(100);
+    	    delay(1000);
         }
 #endif
     }
