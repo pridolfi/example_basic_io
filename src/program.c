@@ -14,9 +14,10 @@ void setup(void)
 void loop(void)
 {
     for (int i=0; i<IO_COUNT; i++) {
-        digitalWrite(outs[i], !digitalRead(ins[i]));
-        delay(10);
 #if 0
+	digitalWrite(outs[i], !digitalRead(ins[i]));
+        delay(10);
+#else
         if (!digitalRead(ins[i])) {
             digitalWrite(outs[i], HIGH);
         } else {
